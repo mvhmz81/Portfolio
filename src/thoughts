@@ -3,11 +3,10 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
-import ExampleCarouselImage from "../src/components/carousel";
+import ExampleCarouselImage from "components/ExampleCarouselImage";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-//import image0.jpeg from "image0";//
 
 function ContainerExample() {
   return (
@@ -38,11 +37,7 @@ function ContainerExample() {
       </Navbar>
       <Row>
         <Col>
-          <img
-            src="https://avatars.githubusercontent.com/u/110194915?v=4"
-            class="img-fluid"
-            alt="Responsive image"
-          />
+          <img src="..." class="img-fluid" alt="Responsive image" />
         </Col>
         <Col>
           <h1>About</h1>
