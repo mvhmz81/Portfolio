@@ -109,7 +109,7 @@ const export profilePic = ()=>{
     return (
    <div class="container">
     <div class="row">
-        <div class="col-sm-6 col-md-6">
+        <div class="col-xs-3, col-sm-6 col-md-6">
             <div class="profile-card">
                 <div class="profile-img">
                     <img src={profilePic}/>
@@ -119,6 +119,8 @@ const export profilePic = ()=>{
                         <span>Software Developer</span>
                     </h2>
                 </div>
+        <div class="col-xs-3, col-sm-6 col-md-6">
+d
             </div>
         </div>
         </div>  
