@@ -1,4 +1,4 @@
-import profilePic from "../src/image-logos/profilePic.jpg";
+import profilePic from "../image-logos/profilePic.jpg";
 
 export const ProfilePic = () => {
   return (
