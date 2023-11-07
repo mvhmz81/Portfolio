@@ -4,7 +4,7 @@ export const ProfilePic = () => {
   return (
     <div class="container">
       <div class="row">
-        <div class="col-xs-3, col-sm-6 col-md-6">
+        <div class="col-xs-6 col-sm-6 col-md-6">
           <div class="profile-card">
             <div class="profile-img">
               <img src={profilePic} />
@@ -15,11 +15,11 @@ export const ProfilePic = () => {
                 <span>Software Developer</span>
               </h2>
             </div>
-            <div class="col-xs-3, col-sm-6 col-md-6">
-              <h2 class="About">
-                Career Changer from Analytical to Teacher to developer
-              </h2>
-            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <div class="about">
+            <h2>Career Changer from Analytical to Teacher to developer</h2>
           </div>
         </div>
       </div>
