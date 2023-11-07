@@ -68,13 +68,16 @@ nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
 }
+.navbar-content {
+  justify-content: space-between;
+}
 .logo-img {
   width: 100px; /* Adjust width as needed */
   height: auto;
 }
 span.navbar-text {
   display: flex;
-  align-items: center;
+  align-items: end;
 }
 .social-icon {
   display: inline-block;
@@ -83,7 +86,8 @@ span.navbar-text {
 .social-icon a {
   width: 42px;
   height: 42px;
-  background: rgb(246, 244, 244);
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 1;
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;

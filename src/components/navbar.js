@@ -3,10 +3,10 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useEffect, useState } from "react";
 import logo1 from "../image-logos/logo1.jpg";
-import homeIcon from "../image-logos/home.svg";
-import projectIcon from "../image-logos/projects.svg";
-import contactIcon from "../image-logos/contact.svg";
-import skillsIcon from "../image-logos/skills.jpg";
+import linkedin from "../image-logos/linkedin.svg";
+import github from "../image-logos/github.svg";
+/*import contactIcon from "../image-logos/contact.svg";
+import skillsIcon from "../image-logos/skills.jpg";*/
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -35,7 +35,7 @@ export const NavBar = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <span className="nav-toggle-icon"></span>
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" className="navbar-content">
           <Nav className="me-auto">
             <Nav.Link
               href="#home"
@@ -77,16 +77,10 @@ export const NavBar = () => {
           <span className="nav-text">
             <div className="social-icon">
               <a href="#">
-                <img src={homeIcon} alt="home Icon" />
+                <img src={linkedin} alt="Linked In Icon" />
               </a>
               <a href="#">
-                <img src={skillsIcon} alt=" skills Icon" />
-              </a>
-              <a href="#">
-                <img src={projectIcon} alt=" project Icon" />
-              </a>
-              <a href="#">
-                <img src={contactIcon} alt="contact Icon" />
+                <img src={github} alt=" Github Icon" />
               </a>
             </div>
             <button className="vvd" onClick={() => console.log("connect")}>
