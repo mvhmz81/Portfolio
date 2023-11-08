@@ -238,6 +238,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /*profile section*/
+.about h5,
+h2,
+p {
+  color: #fff;
+}
+.about span {
+  color: #fe9c2c;
+  font-weight: 400;
+  font-size: 2rem;
+}
+.about h5 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+.about h2 {
+  font-weight: 600;
+  font-size: 5rem;
+}
 
 .profile-card,
 .about {

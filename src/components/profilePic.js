@@ -17,13 +17,12 @@ export const ProfilePic = () => {
             </div>
           </div>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-6">
+        <div class=" aboutFrame col-xs-6 col-sm-6 col-md-6">
           <div class="about">
             <h5>Hi, I'm</h5>
             <h2>Mukti Zavery</h2>
             <span>
-              {" "}
-              "Professional" <a>Software Developer</a>
+              <a>Software Developer</a>
             </span>
             <p>
               "A problem-solving expert with a sharp critical mind, leading and
