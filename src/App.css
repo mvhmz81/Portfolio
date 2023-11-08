@@ -239,7 +239,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /*profile section*/
 
-.profile-card {
+.profile-card,
+.about {
   position: relative;
   overflow: hidden;
   margin-bottom: 10px;
