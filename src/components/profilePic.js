@@ -1,12 +1,51 @@
 import profilePic from "../image-logos/profilePic.jpg";
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from "bootstrap-icons";
+import { ArrowRightCircle } from "react-bootstrap-icons";
+import { useState, useEffect } from "react";
+
 export const Banner = () => {
+  const [loop, setloop] = useState(0);
+  const [isDeleted, setIsDeleted] = useState(false);
+  const toRotate = ["Mukti Zavery"];
+  const [text, setText] = useState("");
+  const [speed, setSpeed] = useState(300 - Math.random() * 100);
+  const period = 2000;
+  useEffect(() => {
+    let timer = setInterval(() => {
+      time();
+    }, speed);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, [text]);
+
+  const time = () => {
+    let i = loop % toRotate.length;
+    let fulltext = toRotate[i];
+    let updatedText = isDeleted
+      ? fulltext.substring(0, text.length - 1)
+      : fulltext.substring(0, text.length + 1);
+
+    setText(updatedText);
+
+    /*if (isDeleted) {
+      setSpeed((prevSpeed) => prevSpeed / 2);*/
+    if (!isDeleted && updatedText === fulltext) {
+      setIsDeleted(true);
+      setSpeed(500);
+    } else if (isDeleted && updatedText === "") {
+      setIsDeleted(false);
+      setloop(loop + 1);
+      setSpeed(500);
+    }
+    /*}*/
+  };
   return (
     <section className="banner" id="home">
       <Container>
         <Row className="align-items-center">
-          <Col xs={6} md={6} xl={7}>
+          <Col xs={12} md={6} xl={7}>
             <div class="profile-card">
               <div class="profile-img">
                 <img src={profilePic} alt="Profile Img" />
@@ -20,14 +59,14 @@ export const Banner = () => {
             </div>
           </Col>
 
-          <Col xs={6} md={6} xl={5}>
+          <Col xs={12} md={6} xl={5}>
             <div class="about">
               <span className="tagline">Welcome to my Portfolio</span>
               <h5>Hi, I'm</h5>
-              <h2>{`Mukti Zavery`}</h2>
-              <span>
-                <a>Software Developer</a>
-              </span>
+              <h1>
+                <span className="wrap">{text}</span>
+              </h1>
+              <h3>Software Developer</h3>
               <p>
                 "A problem-solving expert with a sharp critical mind, leading
                 and adapting seamlessly. From pharmaceuticals to the classroom,
@@ -36,7 +75,8 @@ export const Banner = () => {
                 together!"
               </p>
               <button onClick={() => console.log("connect")}>
-                Let's Connect<ArrowRightCircle size={25}></ArrowRightCircle>
+                Let's Connect
+                <ArrowRightCircle size={25} />
               </button>
             </div>
           </Col>
