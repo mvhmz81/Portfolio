@@ -110,7 +110,7 @@ span.navbar-text {
   transform: scale(1);
 }
 .social-icon a img {
-  width: 40%;
+  width: 60%;
   z-index: 1;
   transition: 0.3s ease-in-out;
 }
@@ -384,4 +384,28 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 5px 0;
   font-size: 14px;
   text-transform: capitalize;
+}
+
+/*Projects*/
+.projects {
+  position: relative;
+  padding: inherit;
+  margin: inherit;
+  bottom: 50px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  padding: 10%;
+}
+
+.text-container {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
 }
