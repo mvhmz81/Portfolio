@@ -56,7 +56,7 @@ export const NavBar = () => {
               Skills
             </Nav.Link>
             <Nav.Link
-              href="#link"
+              href="#projects"
               className={
                 activeLink === "projects" ? "active navbar-link" : "navbar-link"
               }
@@ -65,7 +65,7 @@ export const NavBar = () => {
               Projects
             </Nav.Link>
             <Nav.Link
-              href="#contact"
+              href="#footer"
               className={
                 activeLink === "contact" ? "active navbar-link" : "navbar-link"
               }
@@ -76,16 +76,13 @@ export const NavBar = () => {
           </Nav>
           <span className="nav-text">
             <div className="social-icon">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/mukti-zavery/">
                 <img src={linkedin} alt="Linked In Icon" />
               </a>
-              <a href="#">
+              <a href="https://github.com/mvhmz81">
                 <img src={github} alt=" Github Icon" />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("connect")}>
-              <span>Let's Connect</span>
-            </button>
           </span>
         </Navbar.Collapse>
       </Container>

@@ -393,7 +393,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: inherit;
   bottom: 50px;
 }
-
 .d-flex {
   display: flex;
 }
@@ -402,6 +401,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   overflow: hidden;
   padding: 10%;
+  height: 500px;
 }
 
 .text-container {
@@ -423,4 +423,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .carousel-indicators li:not(.active) {
   background-color: orange;
+}
+.carousel-column {
+  height: 1000px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+/*footer*/
+.footer {
+  position: relative;
+  padding: inherit;
+  margin: inherit;
+  bottom: 50px;
+  top: 50px;
 }

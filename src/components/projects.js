@@ -16,10 +16,10 @@ export const Projects = () => {
         <Carousel activeIndex={index} onSelect={handleSelect}>
           <Carousel.Item interval={2000}>
             <Row className="justify-content-md-center">
-              <Col xs={12} md={7}>
+              <Col xs={12} md={7} className="carousel-coloumn">
                 <img className="d-block w-100" src={frumo} alt="first slide" />
               </Col>
-              <Col xs={12} md={5}>
+              <Col xs={12} md={5} className="carousel-coloumn">
                 <Carousel.Caption style={{ backgroundColor: "black" }}>
                   <h3>Frumo.co.uk</h3>
                   <p>
@@ -35,14 +35,14 @@ export const Projects = () => {
           </Carousel.Item>
           <Carousel.Item interval={2000}>
             <Row className="justify-content-md-center">
-              <Col xs={12} md={7}>
+              <Col xs={12} md={7} className="carousel-coloumn">
                 <img
                   className="d-block w-100 h-100"
                   src={cocktail}
                   alt="Second slide"
                 />
               </Col>
-              <Col xs={12} md={5}>
+              <Col xs={12} md={5} className="carousel-coloumn">
                 <Carousel.Caption style={{ backgroundColor: "black" }}>
                   <h3>Cocktail Builder</h3>
                   <p>
