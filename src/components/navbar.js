@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import logo1 from "../image-logos/logo1.jpg";
 import linkedin from "../image-logos/linkedin.svg";
 import github from "../image-logos/github.svg";
+import cv from "../image-logos/cv.png";
 /*import contactIcon from "../image-logos/contact.svg";
 import skillsIcon from "../image-logos/skills.jpg";*/
 
@@ -81,6 +82,9 @@ export const NavBar = () => {
               </a>
               <a href="https://github.com/mvhmz81">
                 <img src={github} alt=" Github Icon" />
+              </a>
+              <a href="https://shorturl.at/apzT0">
+                <img src={cv} alt="CV Icon" />
               </a>
             </div>
           </span>
