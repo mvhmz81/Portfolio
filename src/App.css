@@ -406,6 +406,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .text-container {
   padding: 20px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba (0, 0, 0, 0.5);
   color: white;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1 !important;
+}
+.carousel-indicators button {
+  height: 10px !important;
+  width: 20px;
+}
+.carousel-indicators li.active {
+  background-color: white;
+}
+.carousel-indicators li:not(.active) {
+  background-color: orange;
 }
