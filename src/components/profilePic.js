@@ -20,7 +20,9 @@ export const Banner = () => {
       clearInterval(timer);
     };
   }, [text]);
-
+ const onUpdateActiveLink = (value) => {
+    setActiveLink(value);
+  };
   const time = () => {
     let i = loop % toRotate.length;
     let fulltext = toRotate[i];
@@ -41,6 +43,20 @@ export const Banner = () => {
       setSpeed(500);
     }
     /*}*/
+  };
+   useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  const onUpdateActiveLink = (value) => {
+    setActiveLink(value);
   };
   return (
     <section className="banner" id="home">
