@@ -11,10 +11,9 @@ export const About = () => {
         <Row>
           <Col md={8} className="aboutDescription">
             <h1 style={{ fontSize: "2.6em" }}>
-              Let me tell you <span className="highlight-text">MORE </span>{" "}
-              about myself
+              Let me tell you <span className="highlight-text">MY STORY </span>{" "}
             </h1>
-            <p className="home-about-body">
+            <p className="home-about-body" style={{ fontSize: "1.2em" }}>
               Hi there! I'm still{" "}
               <span className="highlight-text">Mukti Zavery</span>, originally
               from the vibrant city of{" "}
@@ -56,7 +55,7 @@ export const About = () => {
               <span className="highlight-text">Artificial Intelligence</span>.
             </p>
             <br />
-            <p>
+            <p style={{ fontSize: "1.6em" }}>
               "Explore my world through the links in the{" "}
               <span className="highlight-text">navigation bar</span>, or dive
               right into the conversation using the{" "}
