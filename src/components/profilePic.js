@@ -4,6 +4,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import { useState, useEffect } from "react";
 
 export const Banner = () => {
+   const [activeLink, setActiveLink] = useState("home");
   const [loop, setloop] = useState(0);
   const [isDeleted, setIsDeleted] = useState(false);
   const toRotate = ["Mukti Zavery"];
@@ -74,7 +75,10 @@ export const Banner = () => {
                 bridge science, education, and tech - let's create greatness
                 together!"
               </p>
-              <button onClick={() => console.log("connect")}>
+              <button  href="#footer"
+              className={
+                activeLink === "contact" ? "active navbar-link" : "navbar-link} 
+                onClick={() => onUpdateActiveLink("contact")}>
                 Let's Connect
                 <ArrowRightCircle size={25} />
               </button>
