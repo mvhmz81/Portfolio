@@ -97,7 +97,7 @@ export const Banner = () => {
                     : "navbar-link"
                 }
                 onClick={() => {
-                  const element = document.getElementById("footer");
+                  const element = document.getElementById("contact");
                   if (element) {
                     element.scrollIntoView({ behavior: "smooth" });
                   }
