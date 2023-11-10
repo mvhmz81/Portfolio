@@ -1,28 +1,41 @@
-import profilePic from "../image-logos/profilePic.jpg";
-import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import { ArrowRightCircle } from 'react-bootstrap-icons';
 
 export const Banner = () => {
-   const [activeLink, setActiveLink] = useState("home");
-  const [loop, setloop] = useState(0);
+  const [activeLink, setActiveLink] = useState('home');
+  const [loop, setLoop] = useState(0);
   const [isDeleted, setIsDeleted] = useState(false);
-  const toRotate = ["Mukti Zavery"];
-  const [text, setText] = useState("");
+  const toRotate = ['Mukti Zavery'];
+  const [text, setText] = useState('');
   const [speed, setSpeed] = useState(300 - Math.random() * 100);
-  const period = 2000;
+
   useEffect(() => {
-    let timer = setInterval(() => {
+    const timer = setInterval(() => {
       time();
     }, speed);
 
     return () => {
       clearInterval(timer);
     };
-  }, [text]);
- const onUpdateActiveLink = (value) => {
+  }, [text, speed]);
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   };
+
   const time = () => {
     let i = loop % toRotate.length;
     let fulltext = toRotate[i];
@@ -32,32 +45,16 @@ export const Banner = () => {
 
     setText(updatedText);
 
-    /*if (isDeleted) {
-      setSpeed((prevSpeed) => prevSpeed / 2);*/
     if (!isDeleted && updatedText === fulltext) {
       setIsDeleted(true);
       setSpeed(500);
-    } else if (isDeleted && updatedText === "") {
+    } else if (isDeleted && updatedText === '') {
       setIsDeleted(false);
-      setloop(loop + 1);
+      setLoop(loop + 1);
       setSpeed(500);
     }
-    /*}*/
   };
-   useEffect(() => {
-    const onScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-  const onUpdateActiveLink = (value) => {
-    setActiveLink(value);
-  };
+
   return (
     <section className="banner" id="home">
       <Container>
@@ -91,12 +88,16 @@ export const Banner = () => {
                 bridge science, education, and tech - let's create greatness
                 together!"
               </p>
-              <button  href="#footer"
-              className={
-                activeLink === "contact" ? "active navbar-link" : "navbar-link} 
-                onClick={() => onUpdateActiveLink("contact")}>
-                Let's Connect
-                <ArrowRightCircle size={25} />
+              <button
+                href="#footer"
+                className={
+                  activeLink === 'contact'
+                    ? 'active navbar-link'
+                    : 'navbar-link'
+                }
+                onClick={() => onUpdateActiveLink('contact')}
+              >
+                Let's Connect <ArrowRightCircle size={25} />
               </button>
             </div>
           </Col>
@@ -105,3 +106,4 @@ export const Banner = () => {
     </section>
   );
 };
+
