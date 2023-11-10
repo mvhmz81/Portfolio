@@ -6,8 +6,6 @@ import logo1 from "../image-logos/logo1.jpg";
 import linkedin from "../image-logos/linkedin.svg";
 import github from "../image-logos/github.svg";
 import cv from "../image-logos/cv.png";
-/*import contactIcon from "../image-logos/contact.svg";
-import skillsIcon from "../image-logos/skills.jpg";*/
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -75,7 +73,7 @@ export const NavBar = () => {
               Projects
             </Nav.Link>
             <Nav.Link
-              href="#footer"
+              href="#contact"
               className={
                 activeLink === "contact" ? "active navbar-link" : "navbar-link"
               }

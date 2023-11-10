@@ -34,7 +34,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
   padding: 0;
   line-height: normal;
@@ -243,7 +244,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner {
   margin-top: 0;
-  padding: 100px 0 100px 0;
+  padding: 100px 0 25px 0;
 }
 
 .banner .tagline {
@@ -393,6 +394,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 0;
   padding: 100px 0 100px 0;
   text-align: justify;
+}
+.highlight-text {
+  font-weight: 500;
+  color: #ffc000;
 }
 /*Projects*/
 .projects {
