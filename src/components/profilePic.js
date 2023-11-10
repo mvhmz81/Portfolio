@@ -46,12 +46,12 @@ export const Banner = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <div class="profile-card">
-              <div class="profile-img">
+            <div className="profile-card">
+              <div className="profile-img">
                 <img src={profilePic} alt="Profile Img" />
               </div>
-              <div class="profile-content">
-                <h2 class="title">
+              <div className="profile-content">
+                <h2 className="title">
                   Mukti Zavery
                   <span>Software Developer</span>
                 </h2>
@@ -60,7 +60,7 @@ export const Banner = () => {
           </Col>
 
           <Col xs={12} md={6} xl={5}>
-            <div class="about">
+            <div className="about">
               <span className="tagline">Welcome to my Portfolio</span>
               <h5>Hi, I'm</h5>
               <h1>
