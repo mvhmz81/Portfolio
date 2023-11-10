@@ -1,7 +1,7 @@
 # My Portfolio
 <h1 align="center">Hi 👋, I'm <strong>Mukti</strong> </h1>
 <p align="center">A career changer who is taking her experiences as an Analytical Chemist and 11-18 Chemistry Specialist Teacher to help me in this career change in to tech.
-This portfolio project is built using Create React App and is used to help viualise my progress in my journey and the skills i have learnt.  As a continuance in this journey of learning this is my first time implementing bootstrap as part of my project.  I hope you enjoy this portfolio. </p>
+This portfolio project is built using Create React App and is used to help viualise my progress in my journey and the skills i have learnt.  As a continuance in this journey of learning this is my first time implementing bootstrap and the API Web3form to handle my contact as part of my project.  I hope you enjoy this portfolio. </p>
 
 ### Built With
 
