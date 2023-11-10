@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import { ArrowRightCircle } from 'react-bootstrap-icons';
+import profilePic from "../image-logos/profilePic.jpg";
+import React, { useState, useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import { ArrowRightCircle } from "react-bootstrap-icons";
 
 export const Banner = () => {
-  const [activeLink, setActiveLink] = useState('home');
+  const [scrolled, setScrolled] = useState(false);
+  const [activeLink, setActiveLink] = useState("home");
   const [loop, setLoop] = useState(0);
   const [isDeleted, setIsDeleted] = useState(false);
-  const toRotate = ['Mukti Zavery'];
-  const [text, setText] = useState('');
+  const toRotate = ["Mukti Zavery"];
+  const [text, setText] = useState("");
   const [speed, setSpeed] = useState(300 - Math.random() * 100);
 
   useEffect(() => {
@@ -28,8 +30,8 @@ export const Banner = () => {
         setScrolled(false);
       }
     };
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   const onUpdateActiveLink = (value) => {
@@ -48,7 +50,7 @@ export const Banner = () => {
     if (!isDeleted && updatedText === fulltext) {
       setIsDeleted(true);
       setSpeed(500);
-    } else if (isDeleted && updatedText === '') {
+    } else if (isDeleted && updatedText === "") {
       setIsDeleted(false);
       setLoop(loop + 1);
       setSpeed(500);
@@ -89,13 +91,17 @@ export const Banner = () => {
                 together!"
               </p>
               <button
-                href="#footer"
                 className={
-                  activeLink === 'contact'
-                    ? 'active navbar-link'
-                    : 'navbar-link'
+                  activeLink === "contact"
+                    ? "active navbar-link"
+                    : "navbar-link"
                 }
-                onClick={() => onUpdateActiveLink('contact')}
+                onClick={() => {
+                  const element = document.getElementById("footer");
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
               >
                 Let's Connect <ArrowRightCircle size={25} />
               </button>
@@ -106,4 +112,3 @@ export const Banner = () => {
     </section>
   );
 };
-

@@ -388,12 +388,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-transform: capitalize;
 }
 
+/*About*/
+.about {
+  margin-top: 0;
+  padding: 100px 0 100px 0;
+  text-align: justify;
+}
 /*Projects*/
 .projects {
-  position: relative;
-  padding: inherit;
-  margin: inherit;
-  bottom: 50px;
+  margin-top: 0;
+  padding: 100px 0 100px 0;
 }
 .d-flex {
   display: flex;
@@ -439,8 +443,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 auto;
 }
 
-/*footer*/
-.footer {
+/*contact*/
+.contact {
   position: relative;
   padding: inherit;
   margin: inherit;

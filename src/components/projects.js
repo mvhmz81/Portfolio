@@ -57,7 +57,7 @@ export const Projects = () => {
           </Carousel.Item>
           <Carousel.Item interval={2000}>
             <Row className="justify-content-md-center">
-              <Col xs={12} md={7} className="carousel-coloumn">
+              <Col xs={12} md={7} className="carousel-column">
                 <img
                   className="d-block w-100"
                   src={portfolio}
