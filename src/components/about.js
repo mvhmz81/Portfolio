@@ -77,9 +77,6 @@ export const About = () => {
             </Tilt>
           </Col>
         </Row>
-        <Row>
-          <Col md={12} className="home-about-social"></Col>
-        </Row>
       </Container>
     </section>
   );
