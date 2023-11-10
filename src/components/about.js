@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
 import science from "../image-logos/science.svg";
-import teacher from "../image-logos/teacher.svg";
+import teacher from "../image-logos/Teacher.svg";
 import woman from "../image-logos/woman.svg";
 
 export const About = () => {
