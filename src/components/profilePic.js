@@ -2,13 +2,14 @@ import profilePic from "../image-logos/profilePic.jpg";
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
+import qrcode from "../image-logos/qrcode.png";
 
 export const Banner = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeLink, setActiveLink] = useState("home");
   const [loop, setLoop] = useState(0);
   const [isDeleted, setIsDeleted] = useState(false);
-  const toRotate = ["Mukti Zavery"];
+  const toRotate = ["ukti Zavery"];
   const [text, setText] = useState("");
   const [speed, setSpeed] = useState(300 - Math.random() * 100);
 
@@ -80,7 +81,7 @@ export const Banner = () => {
               <span className="tagline">Welcome to my Portfolio</span>
               <h5>Hi, I'm</h5>
               <h1>
-                <span className="wrap">{text}</span>
+                <span className="wrap">M{text}</span>
               </h1>
               <h3>Software Developer</h3>
               <p>
@@ -105,6 +106,7 @@ export const Banner = () => {
               >
                 Let's Connect <ArrowRightCircle size={25} />
               </button>
+              <img src={qrcode} alt="QR Code" className="qr-code" />
             </div>
           </Col>
         </Row>

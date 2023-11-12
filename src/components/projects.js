@@ -16,12 +16,15 @@ export const Projects = () => {
       <Container>
         <Carousel activeIndex={index} onSelect={handleSelect}>
           <Carousel.Item interval={2000}>
-            <Row className="justify-content-md-center">
-              <Col xs={12} md={7} className="carousel-coloumn">
+            <Row className="justify-content-center">
+              <Col xs={12} md={7} className="carousel-column">
                 <img className="d-block w-100" src={frumo} alt="first slide" />
               </Col>
-              <Col xs={12} md={5} className="carousel-coloumn ">
-                <Carousel.Caption style={{ backgroundColor: "black" }}>
+              <Col xs={12} md={5} className="carousel-column ">
+                <Carousel.Caption
+                  style={{ backgroundColor: "black" }}
+                  className="carousel-caption"
+                >
                   <h3>Frumo.co.uk</h3>
                   <p>
                     Get the app that makes managing your money fun and easy.
@@ -35,16 +38,19 @@ export const Projects = () => {
             </Row>
           </Carousel.Item>
           <Carousel.Item interval={2000}>
-            <Row className="justify-content-md-center">
-              <Col xs={12} md={7} className="carousel-coloumn">
+            <Row className="justify-content-center">
+              <Col xs={12} md={7} className="carousel-column">
                 <img
                   className="d-block w-100"
                   src={cocktail}
                   alt="Second slide"
                 />
               </Col>
-              <Col xs={12} md={5} className="carousel-coloumn">
-                <Carousel.Caption style={{ backgroundColor: "black" }}>
+              <Col xs={12} md={5} className="carousel-column">
+                <Carousel.Caption
+                  style={{ backgroundColor: "black" }}
+                  className="carousel-caption"
+                >
                   <h3>Cocktail Builder</h3>
                   <p>
                     When in doubt utilize this app to search for cocktails by
@@ -56,7 +62,7 @@ export const Projects = () => {
             </Row>
           </Carousel.Item>
           <Carousel.Item interval={2000}>
-            <Row className="justify-content-md-center">
+            <Row className="justify-content-center">
               <Col xs={12} md={7} className="carousel-column">
                 <img
                   className="d-block w-100"
@@ -64,8 +70,11 @@ export const Projects = () => {
                   alt="third slide"
                 />
               </Col>
-              <Col xs={12} md={5} className="carousel-coloumn">
-                <Carousel.Caption style={{ backgroundColor: "black" }}>
+              <Col xs={12} md={5} className="carousel-column">
+                <Carousel.Caption
+                  style={{ backgroundColor: "black" }}
+                  className="carousel-caption"
+                >
                   <h3>Portfolio</h3>
                   <p>
                     A break down of who i am and what i represent. Building on
