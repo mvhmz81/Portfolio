@@ -18,7 +18,13 @@ export const Projects = () => {
           <Carousel.Item interval={2000}>
             <Row className="justify-content-center">
               <Col xs={12} md={7} className="carousel-column">
-                <img className="d-block w-100" src={frumo} alt="first slide" />
+                <a href="https://frumo.co.uk">
+                  <img
+                    className="d-block w-100"
+                    src={frumo}
+                    alt="first slide"
+                  />
+                </a>
               </Col>
               <Col xs={12} md={5} className="carousel-column ">
                 <Carousel.Caption
@@ -31,6 +37,10 @@ export const Projects = () => {
                     Frumo's gamified tools help you set and achieve personal
                     goals, while providing helpful resources for money
                     decisions.
+                    <br />
+                    <span className="highlight-text">
+                      (click image to website)
+                    </span>
                   </p>
                   <p>Tech Stack - Next.js, Supabase</p>
                 </Carousel.Caption>
@@ -40,11 +50,13 @@ export const Projects = () => {
           <Carousel.Item interval={2000}>
             <Row className="justify-content-center">
               <Col xs={12} md={7} className="carousel-column">
-                <img
-                  className="d-block w-100"
-                  src={cocktail}
-                  alt="Second slide"
-                />
+                <a href="https://cocktail-builder.netlify.com">
+                  <img
+                    className="d-block w-100"
+                    src={cocktail}
+                    alt="Second slide"
+                  />
+                </a>
               </Col>
               <Col xs={12} md={5} className="carousel-column">
                 <Carousel.Caption
@@ -54,7 +66,11 @@ export const Projects = () => {
                   <h3>Cocktail Builder</h3>
                   <p>
                     When in doubt utilize this app to search for cocktails by
-                    name or even ingredients in the fridge
+                    name or even ingredients in the fridge.
+                    <br />
+                    <span className="highlight-text">
+                      (click image to website)
+                    </span>
                   </p>
                   <p>Tech Stack - React, CSS</p>
                 </Carousel.Caption>
@@ -64,11 +80,13 @@ export const Projects = () => {
           <Carousel.Item interval={2000}>
             <Row className="justify-content-center">
               <Col xs={12} md={7} className="carousel-column">
-                <img
-                  className="d-block w-100"
-                  src={portfolio}
-                  alt="third slide"
-                />
+                <a href="https://muktizavery.netlify.com">
+                  <img
+                    className="d-block w-100"
+                    src={portfolio}
+                    alt="third slide"
+                  />
+                </a>
               </Col>
               <Col xs={12} md={5} className="carousel-column">
                 <Carousel.Caption
@@ -77,9 +95,12 @@ export const Projects = () => {
                 >
                   <h3>Portfolio</h3>
                   <p>
-                    A break down of who i am and what i represent. Building on
-                    my knowledge of react this is the first time i utilised
-                    Bootstrap.
+                    A break down of who I am and what i represent. Building on
+                    my knowledge of react this is the first time I utilised
+                    Bootstrap. <br />
+                    <span className="highlight-text">
+                      (click image to website)
+                    </span>
                   </p>
                   <p>Tech Stack - Bootstrap, React</p>
                 </Carousel.Caption>
