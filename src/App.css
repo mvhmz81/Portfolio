@@ -261,7 +261,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-block;
 }
 .banner h1 {
-  font-size: 65px;
+  font-size: 3rem;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -394,9 +394,7 @@ p {
   max-width: 100%;
   position: static;
 }
-.col-12.h1 {
-  font-size: 3rem !important;
-}
+
 .qr-code {
   max-width: 100px;
   margin-left: 50px;
@@ -412,6 +410,23 @@ p {
   font-weight: 500;
   color: #ffc000;
 }
+.highlight-text-1 {
+  font-weight: 500;
+  color: #ffc000;
+  animation: flash 1s infinite;
+}
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /*Projects*/
 .projects {
   margin-top: 0;

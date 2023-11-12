@@ -21,10 +21,18 @@ export const About = () => {
               <br />
               <br />
               My journey into the world of technology began when I transitioned
-              from being an Analytical Chemist and Teacher to a{" "}
-              <b>Software Developer</b>. Since August 2022, I've immersed myself
-              in learning from leading organizations such as Code First Girls
-              and The School Of Code, honing my skills in:
+              from being an{" "}
+              <span className="highlight-text">
+                Analytical Chemist
+              </span> and <span className="highlight-text">Teacher</span> to a{" "}
+              <span className="highlight-text-1" style={{ fontWeight: "bold" }}>
+                Software Developer
+              </span>
+              . Since August 2022, I've immersed myself in learning from leading
+              organizations such as{" "}
+              <span className="highlight-text">Code First Girls </span>
+              and <span className="highlight-text">The School Of Code</span>,
+              honing my skills in:
               <br />
               <ul>
                 <li>Javascript</li>
