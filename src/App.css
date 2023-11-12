@@ -440,12 +440,16 @@ p {
 }
 
 .image-container {
-  position: relative;
-  overflow: hidden;
-  padding: 2px;
-  height: 300px;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
 }
-
+.science,
+.teacher,
+.woman {
+  max-width: 250px;
+}
 .text-container {
   padding: 2px;
   background: rgba (0, 0, 0, 0.5);
