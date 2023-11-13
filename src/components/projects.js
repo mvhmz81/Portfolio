@@ -50,7 +50,7 @@ export const Projects = () => {
           <Carousel.Item interval={2000}>
             <Row className="justify-content-center">
               <Col xs={12} md={7} className="carousel-column">
-                <a href="https://cocktail-builder.netlify.com">
+                <a href="https://cocktailbuilder.netlify.app">
                   <img
                     className="d-block w-100"
                     src={cocktail}
@@ -66,7 +66,7 @@ export const Projects = () => {
                   <h3>Cocktail Builder</h3>
                   <p>
                     When in doubt utilize this app to search for cocktails by
-                    name or even ingredients in the fridge.
+                    name or even ingredients in the fridge. (mvp visualise on laptops)
                     <br />
                     <span className="highlight-text">
                       (click image to website)
