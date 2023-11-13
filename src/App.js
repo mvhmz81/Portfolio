@@ -5,6 +5,7 @@ import { Banner } from "./components/profilePic";
 import { Projects } from "./components/projects";
 import { Contact } from "./components/contact";
 import { About } from "./components/about";
+import { Footer } from "./components/footer";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <About />
       <Projects />
       <Contact />
-    <Footer />
+      <Footer />
     </div>
   );
 }

@@ -78,7 +78,7 @@ export const About = () => {
                 <img src={teacher} className="teacher" alt="avatar" />
                 <img src={woman} className="woman" alt="avatar" />
                 <br />
-                <a href="https://storyset.com/work">
+                <a href="https://storyset.com/work" style={{ color: "white" }}>
                   Work illustrations by Storyset
                 </a>
               </div>

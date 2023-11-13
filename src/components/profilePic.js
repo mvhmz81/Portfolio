@@ -1,4 +1,4 @@
-import profilePic from "../image-logos/profilePic.jpg";
+import profilePic from "../image-logos/profilePic.png";
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";

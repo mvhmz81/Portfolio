@@ -66,7 +66,8 @@ export const Projects = () => {
                   <h3>Cocktail Builder</h3>
                   <p>
                     When in doubt utilize this app to search for cocktails by
-                    name or even ingredients in the fridge. (mvp visualise on laptops)
+                    name or even ingredients in the fridge. (mvp visualise on
+                    laptops)
                     <br />
                     <span className="highlight-text">
                       (click image to website)
