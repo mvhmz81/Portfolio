@@ -43,7 +43,7 @@ export const Contact = () => {
             ></textarea>
           </div>
           <div className="h-captcha" data-captcha="true"></div>
-          <button type="submit" className="btn btn-outline-light">
+          <button type="submit" className="btn btn-secondary">
             Submit Form
           </button>
         </form>
