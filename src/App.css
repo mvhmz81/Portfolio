@@ -48,10 +48,12 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition: 0.32 ease-in-out;
+  text-align: right;
 }
 nav.navbar.scrolled {
   padding: 0px 0;
   background-color: black;
+  text-align: right;
 }
 nav.navbar a.navbar-brand {
   width: 9%;
@@ -80,7 +82,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 span.navbar-text {
   display: flex;
-  align-items: end;
+  align-items: left;
 }
 .social-icon {
   display: inline-block;
@@ -154,6 +156,7 @@ span.navbar-text {
   width: 100%;
   height: 100%;
   position: absolute;
+  justify-content: flex-end !important;
 }
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
@@ -440,6 +443,7 @@ p {
 }
 
 .image-container {
+  display: flex;
   flex-direction: column;
   padding: 10px;
   justify-content: center;
@@ -471,7 +475,8 @@ p {
   background-color: orange;
 }
 .carousel-column {
-  height: 400px;
+  height: 350px;
+  width: 350px;
   margin: 0 auto;
 }
 .carousel-caption {
