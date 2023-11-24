@@ -40,6 +40,12 @@ export const Skills = () => {
     },
     {
       source:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg",
+      alt: "Python",
+      title: "Python",
+    },
+    {
+      source:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
       alt: "NPM",
       title: "NPM",
@@ -56,13 +62,24 @@ export const Skills = () => {
       alt: "The logo icon for MySQL",
       title: "MySQL",
     },
+    {
+      source:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrhDfy2B92zDt0KxeXVG5HjAgqfScbiyV7aQ&usqp=CAU",
+      alt: "Supabase",
+      title: "Supabase",
+    },
+    {
+      source: "https://img.icons8.com/color/200/figma--v1.png",
+      alt: "Figma",
+      title: "Figma",
+    },
   ];
 
   return (
     <div className="container">
       <div className="skills">
         <h2>I have experience with these technologies</h2>
-        <div className="skillsGrid row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3">
+        <div className="skillsGrid row row-cols-1 row-cols-xs-2 row-cols-md-4 row-cols-lg-6 g-3">
           {skillsData.map((skill, index) => (
             <div className="skill" key={index}>
               <img

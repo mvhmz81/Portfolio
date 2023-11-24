@@ -491,6 +491,22 @@ p {
   justify-content: center;
   height: 100%;
 }
+/*skills*/
+.skills {
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.skillsGrid img {
+  max-height: 100px;
+  max-width: 100px;
+  padding: 5px;
+}
 /*contact*/
 .contact {
   position: relative;
