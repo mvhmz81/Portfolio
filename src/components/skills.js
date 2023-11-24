@@ -1,6 +1,6 @@
 import React from "react";
 
-function Skills() {
+export const Skills = () => {
   const skillsData = [
     {
       source:
@@ -22,15 +22,21 @@ function Skills() {
     },
     {
       source:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg",
-      alt: "Tailwind CSS",
-      title: "Tailwind CSS",
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg",
+      alt: "Bootstrap CSS",
+      title: "Bootstrap CSS",
     },
     {
       source:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg",
       alt: "GitHub",
       title: "GitHub",
+    },
+    {
+      source:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      alt: "The logo icon for Javascript",
+      title: "JavaScript",
     },
     {
       source:
@@ -44,25 +50,30 @@ function Skills() {
       alt: "NodeJS",
       title: "Node JS",
     },
-    // Add more skills as needed
+    {
+      source:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg",
+      alt: "The logo icon for MySQL",
+      title: "MySQL",
+    },
   ];
 
   return (
-    <div className="skills">
-      <h2>I have experience with these technologies</h2>
-      <div className="skillsGrid">
-        {skillsData.map((skill, index) => (
-          <div className="skill" key={index}>
-            <img
-              src={skill.source}
-              alt={`Logo icon for ${skill.alt}`}
-              title={skill.title}
-            />
-          </div>
-        ))}
+    <div className="container">
+      <div className="skills">
+        <h2>I have experience with these technologies</h2>
+        <div className="skillsGrid row row-cols-1 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 g-3">
+          {skillsData.map((skill, index) => (
+            <div className="skill" key={index}>
+              <img
+                src={skill.source}
+                alt={`Logo icon for ${skill.alt}`}
+                title={skill.title}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
-}
-
-export default Skills;
+};
