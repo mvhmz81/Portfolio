@@ -92,7 +92,7 @@ export const NavBar = () => {
               <a href="https://github.com/mvhmz81">
                 <img src={github} alt=" Github Icon" />
               </a>
-              <a href="https://shorturl.at/apzT0">
+              <a href="https://muktizaveryresume.tiiny.site">
                 <img src={cv} alt="CV Icon" />
               </a>
             </div>
