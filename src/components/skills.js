@@ -79,7 +79,7 @@ export const Skills = () => {
     <div className="container">
       <div className="skills">
         <h2>I have experience with these technologies</h2>
-        <div className="skillsGrid row row-cols-1 row-cols-xs-2 row-cols-md-4 row-cols-lg-6 g-3">
+        <div className="skillsGrid row row-cols-xs-2 row-cols-md-4 row-cols-lg-6 g-3">
           {skillsData.map((skill, index) => (
             <div className="skill" key={index}>
               <img
