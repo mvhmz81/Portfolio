@@ -460,10 +460,15 @@ p {
   color: white;
 }
 
-.carousel-control-next,
+.carousel-control-next {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: none !important;
+}
 .carousel-control-prev {
   opacity: 1 !important;
 }
+
 .carousel-indicators button {
   height: 10px !important;
   width: 20px;
