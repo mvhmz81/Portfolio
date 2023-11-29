@@ -28,7 +28,7 @@ export const Skills = () => {
     },
     {
       source:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg",
+        "https://cdn.iconscout.com/icon/free/png-512/free-github-7662226-6297162.png?f=webp&w=256",
       alt: "GitHub",
       title: "GitHub",
     },
@@ -64,6 +64,12 @@ export const Skills = () => {
     },
     {
       source:
+        "https://cdn.iconscout.com/icon/free/png-512/free-postgresql-11-1175122.png?f=webp&w=256",
+      alt: "postgresql",
+      title: "postgresSQL",
+    },
+    {
+      source:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrhDfy2B92zDt0KxeXVG5HjAgqfScbiyV7aQ&usqp=CAU",
       alt: "Supabase",
       title: "Supabase",
@@ -72,6 +78,18 @@ export const Skills = () => {
       source: "https://img.icons8.com/color/200/figma--v1.png",
       alt: "Figma",
       title: "Figma",
+    },
+    {
+      source:
+        "https://cdn.iconscout.com/icon/premium/png-512-thumb/miro-3567784-2984008.png?f=webp&w=256",
+      alt: "miro",
+      title: "miro",
+    },
+    {
+      source:
+        "https://cdn.iconscout.com/icon/premium/png-512-thumb/agile-development-9484764-7708834.png?f=webp&w=256",
+      alt: "Agile development cycle",
+      title: "Agile development cylce",
     },
   ];
 
