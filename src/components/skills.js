@@ -94,6 +94,7 @@ export const Skills = () => {
   ];
 
   return (
+      <section className="skills" id="skills">
     <div className="container">
       <div className="skills">
         <h2>I have experience with these technologies</h2>
@@ -110,5 +111,6 @@ export const Skills = () => {
         </div>
       </div>
     </div>
+            </section>
   );
 };
